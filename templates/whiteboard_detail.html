@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ whiteboard.name }}{% endblock %}
+
+{% block content %}
+  <h2>{{ whiteboard.name }}</h2>
+  <canvas id="whiteboardCanvas" width="800" height="600"></canvas>
+
+  <script>
+    // Your JavaScript code for drawing and collaboration goes here
+  </script>
+{% endblock %}

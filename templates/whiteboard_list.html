@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Whiteboards{% endblock %}
+
+{% block content %}
+  <h2>Whiteboards</h2>
+  <ul>
+    {% for whiteboard in whiteboards %}
+      <li><a href="{% url 'whiteboard_detail' whiteboard.id %}">{{ whiteboard.name }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
